@@ -62,7 +62,7 @@ const NewProduct = ({ history }) => {
     myForm.set("price", price);
     myForm.set("description", description);
     myForm.set("category", category);
-    myForm.set("Stock", stock);
+    myForm.set("stock", stock);
 
     image.forEach((image) => {
       myForm.append("image", image);

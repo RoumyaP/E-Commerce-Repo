@@ -1,3 +1,7 @@
+.status-delivered {
+    color: rgb(0, 255, 0);
+  }
+
 .productListContainer{
     background-color: white;
 }
@@ -49,6 +53,10 @@
     margin: 0 auto;
     margin-top: 4vmax;
     width: 80%;
+}
+
+.sortIcon{
+    font-size: 1.4vmax;
 }
 
 .btnDiv{

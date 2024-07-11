@@ -1,10 +1,9 @@
-import React, { Fragment, useEffect, useMemo, useState } from "react";
+import React, { Fragment, useEffect, useMemo, } from "react";
 import {useTable,useSortBy, usePagination} from 'react-table';
 import "./ProductList.css";
 import { useSelector, useDispatch } from "react-redux";
 import {
   clearErrors,
-  getProduct,
   deleteProduct,
   getAdminProduct
 } from "../../actions/productAction";
@@ -54,8 +53,6 @@ const ProductList = () => {
 
   const alert = useAlert();
   const navigate = useNavigate();
-
-  const [pageNo, setPageNo] = useState();
 
   const { error, products } = useSelector((state) => state.allProducts);
 
@@ -117,7 +114,7 @@ const ProductList = () => {
     }
 
     dispatch(getAdminProduct());
-  }, [dispatch, alert, error, deleteError,isDeleted]);
+  }, [dispatch, alert, error, deleteError,isDeleted,navigate]);
 
 
       const { 
@@ -160,7 +157,7 @@ const ProductList = () => {
                       <th {...column.getHeaderProps(column.getSortByToggleProps())}>
                         {column.render('Header')}
                         {
-                          column.isSorted && (<span>{column.isSortedDesc?
+                          column.isSorted && (<span className="sortIcon">{column.isSortedDesc?
                             ' 🔽':' 🔼'
                           }</span>
                         )}
@@ -200,7 +197,6 @@ const ProductList = () => {
               onChange={(e)=>{
                 const Page = Number(e.target.value);
                 if (!isNaN(Page) && Page > 0 && Page <= pageCount) {
-                  setPageNo(Page);
                   gotoPage(Page-1);
                 }
             }}/>

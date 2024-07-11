@@ -150,6 +150,15 @@ import {
   
       dispatch({ type: ORDER_DETAILS_SUCCESS, payload: data.order });
     } catch (error) {
+      if (error.response) {
+        console.error('Status:', error.response.status);
+        console.error('Data:', error.response.data);
+        console.error('Headers:', error.response.headers);
+      } else if (error.request) {
+        console.error('Request:', error.request);
+      } else {
+        console.error('Error:', error.message);
+      }
       dispatch({
         type: ORDER_DETAILS_FAIL,
         payload: error.response.data.message,

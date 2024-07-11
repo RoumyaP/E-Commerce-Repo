@@ -1,0 +1,32 @@
+1.
+  Line 7:48:  React Hook "useSelector" is called in function "protectedRoute" which is neither a React function component or a custom React Hook function  react-hooks/rules-of-hooks
+
+SOL: Name of element probably starts with a small alphabet. Make it capital.
+
+2.
+error:0308010C:digital envelope routines::unsupported
+
+SOL: enter 'set NODE_OPTIONS=--openssl-legacy-provider' on cmd
+
+3.
+500 Internal Server Error
+
+SOL: if (error.response) {
+        console.error('Status:', error.response.status);
+        console.error('Data:', error.response.data);
+        console.error('Headers:', error.response.headers);
+      } else if (error.request) {
+        console.error('Request:', error.request);
+      } else {
+        console.error('Error:', error.message);
+      }
+**INSIDE CATCH BLOCK-will highlight the problem** 
+
+4. 
+404 NOT FOUND REQUEST
+
+SOL: leading '/' in axios api
+
+5. If login token gets deleted due to react update 
+then remove the loadUser and stripeApiKey dispatches from App.js useEffect
+and login again and restore the dispatched. Will work fine.

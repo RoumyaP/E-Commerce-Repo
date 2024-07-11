@@ -36,6 +36,9 @@ import ProductList from './component/admin/ProductList.js';
 import NewProduct from './component/admin/NewProduct.js';
 import UpdateProduct from './component/admin/UpdateProduct.js';
 import OrderList from './component/admin/OrderList.js';
+import ProcessOrder from './component/admin/ProcessOrder.js';
+import UserList from './component/admin/UserList.js';
+import UpdateUser from './component/admin/UpdateUser.js';
 
 
 
@@ -109,6 +112,9 @@ function App() {
         <Route exact path='/admin/product' Component={NewProduct} />
         <Route exact path='/admin/product/:id' Component={UpdateProduct} />
         <Route exact path='/admin/orders' Component={OrderList} />
+        <Route exact path='/admin/order/:id' Component={ProcessOrder} />
+        <Route exact path='/admin/users' Component={UserList} />
+        <Route exact path='/admin/user/:id' Component={UpdateUser} />
       </Route>
 
       </Routes>

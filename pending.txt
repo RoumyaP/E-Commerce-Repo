@@ -1,0 +1,13 @@
+Pending:
+
+3. When finishing updating, after UPDATE_USER_RESET, LOAD_USER_REQUEST resulting in LOAD_USER_FAIL.
+
+5. Update Profile not working if I don't select Profile Picure too.
+
+6. Not logging out on certain pages, says 404 not found.
+
+7. Out of Stock not working for out of stock items hence getting fucked 
+   fucked in Dashboard.
+
+
+

@@ -5,7 +5,6 @@ import {
   clearErrors,
   updateProduct,
   getProductDetails,
-  getProduct,
 } from "../../actions/productAction";
 import { useAlert } from "react-alert";
 import { Button } from "@material-ui/core";
