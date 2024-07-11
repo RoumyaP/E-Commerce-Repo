@@ -1,0 +1,161 @@
+.myOrdersPage {
+    width: 100vw;
+    max-width: 100%;
+    padding: 0 7vmax;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #ffffff, #3cffff);
+    position: fixed;
+    top: 0;
+    padding-top: 4vmax;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .table{
+    background-color: black;
+    width: 100%;
+    padding: 0;
+  }
+   .head > th{
+    background-color: black;
+    color: aqua;
+    font: 400 1vmax 'Roboto';
+    /* padding: 1vmax 9.26vmax; */
+    border: 1px solid black;
+    box-shadow: 0 0 3px black;
+  }
+  .body{
+    height: 32vmax;
+  }
+  .row{
+    background-color: rgb(237, 237, 237);
+  }
+  .row > td{
+    text-align: center;
+    font: 300 1vmax 'Roboto';
+  }
+  .link{
+    font: 300 1vmax 'Roboto';
+    background-color: black;
+    color: aqua;
+    padding: 0.4vmax;
+    border-radius: 25px;
+    transition: all 0.3s;
+  }
+  .link:hover{
+    color: black;
+    background-color: aqua;
+  }
+  .status>div{
+    background-color: rgba(0, 0, 0, 0.744);
+    padding: 0.4vmax 0.2vmax;
+    margin: auto;
+    width: 6vmax;
+    border-radius: 25px;
+  }
+  #myOrdersHeading {
+    text-align: center;
+    font: 400 1.2vmax "Roboto";
+    padding: 0.5vmax;
+    width: 100%;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+    background-color: rgb(44, 44, 44);
+  }
+
+  .paginationBox{
+    display: flex;
+    justify-content: center;
+    margin-top: -7vmax;
+    /* width: 16vmax; */
+    /* background-color: violet; */
+}
+
+/*ul class*/
+.pagination{ 
+    display: flex;
+    justify-content: center;
+    width: 13vmax;
+    padding: 0;
+    margin-top: -0.2vmax;
+}
+
+/* on browser */
+.page-item{ 
+    background-color: white;
+    list-style: none;
+    padding: 0.3vmax 0;
+    padding-left: 2vmax;
+    padding-right: 2vmax;
+    margin: 0 1vmax;
+    margin-top: 6.7vmax;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 7px rgb(0, 0, 0);
+    border-radius: 55px;
+
+    width: 1.4vmax;
+    height: 1.4vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-link{
+    text-decoration: none;
+    font: 500 1.3vmax 'Roboto';
+    color: aqua;
+    transition: all 0.3s;
+}
+
+.page-item:hover{
+    background-color: aqua;
+    border: 1px solid aqua;
+    box-shadow: 0 0 5px aqua;
+}
+
+.page-item:hover .page-link{
+    color: rgb(0, 0, 0);
+    /* transform: scale(110%); */
+}
+
+.pageItemActive{
+    background-color: #ffffff;
+}
+.pageLinkActive{
+    color: rgb(0, 0, 0);
+}
+  
+  
+  @media screen and (max-width: 600px) {
+    .myOrdersPage {
+      padding-top: 26vmax;
+      height: 102vh;
+    }
+
+    .table{
+      width: 100%;
+      padding: 0;
+    }
+
+    .page-item{
+      margin-left: 0.5vmax;
+      margin-right: 0.5vmax;
+      padding-left: 1.2vmax;
+      padding-right: 1.2vmax;
+    }
+
+    .page-link{
+      font: 500 1.2vmax 'Roboto';
+  }
+  
+    #myOrdersHeading {
+      font: 400 2.2vmax "Roboto";
+      width: 100%; 
+      margin: 0;
+    }
+  }

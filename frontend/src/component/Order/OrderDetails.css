@@ -1,0 +1,239 @@
+.orderDetailsPage {
+    background-color: white;
+    margin: 2vmax 6vmax;
+  }
+  
+  .h1 {
+    font: 400 1.8vmax "Roboto";
+    margin: 9vmax 9.3vmax;
+    margin-bottom: -1vmax;
+    padding: 1vmax;
+    border-radius: 65px;
+    width: 30vmax;
+    text-align: center;
+    background-color: black;
+    color: aqua;
+  }
+  .h1 > p{
+    font-size: 1.4vmax;
+  }
+  
+  .head{
+    color: black;
+    background-color: aqua;
+    width: 12vw;
+    text-align: center;
+    padding: 0.4vmax;
+    border-radius: 25px;
+  }
+  
+  .orderDetailsContainer {
+    padding: 5vmax;
+    padding-bottom: 0%;
+  }
+  
+  .orderDetailsContainer > p {
+    font: 400 1.8vmax "Roboto";
+  }
+  
+  
+  
+  .orderDetailsContainerBox,
+  .orderDetailsCartItemsContainer {
+    margin: 2vmax;
+  }
+  
+  .orderDetailsContainerBox > div {
+    display: flex;
+    margin: 1vmax 0;
+  }
+  
+  .orderDetailsContainerBox > div > p {
+    font: 400 1.4vmax "Roboto";
+  }
+
+  .status1{
+    background-color: black;
+    padding: 0.6vmax 1vmax;
+    border-radius: 45px;
+    margin-top: -0.6vmax;
+  }
+
+  .orderDetailsContainerBox > div > span {
+    margin: 1vmax 1vmax;
+    font: 100 2vmax "Roboto";
+    color: black;
+  }
+  
+  .orderDetailsCartItems > p {
+    font: 400 1.8vmax "Roboto";
+  }
+  
+  .orderDetailsCartItems {
+    padding: 2vmax 5vmax;
+    border-top: 1px solid black;
+  }
+  
+  .orderDetailsCartItemsContainer > div {
+    display: flex;
+    font: 400 1vmax "Roboto";
+    align-items: center;
+    margin: 2vmax 0;
+  }
+  
+  .orderDetailsCartItemsContainer > div > img {
+    width: 6vmax;
+  }
+  
+  .orderDetailsCartItemsContainer > div > a {
+    color: #575757;
+    margin: 0 2vmax;
+    width: 60%;
+    text-decoration: none;
+  }
+  
+  .orderDetailsCartItemsContainer > div > span {
+    font: 100 1vmax "Roboto";
+    color: black;
+  }
+  
+  .red{
+    color: red;
+  }
+  
+  .green{
+    color: rgb(0, 255, 0);
+  }
+
+  .head1{
+    font: 400 1.8vmax "Roboto";
+    color: black;
+    background-color: aqua;
+    width: 12vw;
+    text-align: center;
+    padding: 0.4vmax;
+    border-radius: 25px;
+  }
+  .paid{
+    margin: 0;
+    margin-bottom: -1vmax;
+    background-color: black;
+    padding: 0.5vmax 1vmax;
+    border-radius: 45px;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    /* .orderDetailsContainer{
+      display: flex;
+      flex-direction: column;
+    } */
+
+    .h1{
+      width: 40vmax;
+      font-size: 1vmax;
+      margin-top: 16vmax;
+      margin-bottom: -1vmax;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 25px;
+    }
+
+    .orderDetailsPage > div > h1 {
+      font: 300 2vmax "Roboto";
+      text-align: center;
+      background-color: black;
+      padding: 0.5vmax;
+      border-radius: 25px;
+      color: aqua;
+      margin-top: 12vmax;
+    }
+
+    .head{
+      color: black;
+      background-color: aqua;
+      width: 25vmax;
+      text-align: center;
+      padding: 0.4vmax;
+      border-radius: 25px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .head1{
+      margin: 0 auto;
+      width: 30vw;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .orderDetailsContainer > p {
+      font: 400 5vw "Roboto";
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .orderDetailsContainerBox > div {
+      margin: 6vw 0;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .orderDetailsContainerBox > div > p {
+      font: 400 4vw "Roboto";
+      margin-left: auto;
+      margin-right: auto;
+      color: rgb(60, 60, 60);
+    }
+    .orderDetailsContainerBox > div > span {
+      font: 100 5vw "Roboto";
+      margin-top: -1vmax;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .orderDetailsCartItems > p {
+      font: 400 5vw "Roboto";
+    }
+
+    .orderDetailsCartItems {
+      margin: 1vmax auto;
+    }
+    
+    .orderDetailsCartItemsContainer{
+      margin: -5vmax;
+      margin-top: 2vmax;
+    }
+
+    .orderDetailsCartItemsContainer > div {
+      font: 400 4vw "Roboto";
+      margin: 6vw 0;
+    }
+  
+    .orderDetailsCartItemsContainer > div > img {
+      width: 5.1vmax;
+    }
+    
+    .paid{
+      margin: 0;
+      margin-bottom: -1vmax;
+      background-color: black;
+      padding: 0.5vmax;
+      border-radius: 10px;
+    }
+  
+    .a {
+      margin: 2vw;
+      margin-right: 0;
+      width: 30%;
+    }
+  
+    .orderDetailsCartItemsContainer > div > span {
+      font: 100 1.5vmax "Roboto";
+      width: 80%;
+      text-align: center;
+      margin-left: 0;
+    }
+   
+  }

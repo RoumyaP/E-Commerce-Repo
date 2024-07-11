@@ -1,0 +1,207 @@
+.emptyCart{
+    margin: auto;
+    text-align: center;
+    padding: 10vmax;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.emptyCart > svg{
+    font-size: 5vmax;
+    color: aqua;
+}
+.emptyCart > p{
+    font-size: 2vmax;
+    margin: 1vmax auto;
+    font-family: 'Roboto';
+}
+.emptyCart > a{
+    background-color: black;
+    color: aqua;
+    border: none;
+    padding: 1vmax 3vmax;
+    cursor: pointer;
+    font: 400 1vmax 'Roboto';
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.emptyCart > a:hover{
+    background-color: aqua;
+    color: black;
+}
+
+
+
+
+.cartPage{
+    padding: 5vmax;
+}
+.cartHeader{
+    background-color: black;
+    width: 90%;
+    box-sizing: border-box;
+    margin: auto;
+    color: aqua;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    font: 300 1vmax 'Roboto';
+}
+.cartHeader>p{
+    margin: 10px;
+}
+.cartHeader>p:last-child{
+    text-align: end;
+}
+
+
+
+.cartContainer{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+}
+.cartInput{
+    display: flex;
+    align-items: center;
+    height: 8vmax;
+}
+.buttonp{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.47);
+    cursor: pointer;
+    font-size: 1.3vmax;
+    padding-top: 0.17vmax;
+    padding-bottom: -1.5vmax;
+    padding-right: 0.44vmax;
+    padding-left: 0.44vmax;
+    color: rgb(0, 0, 0);
+    transition: all 0.5s;
+    border-radius: 40%;
+}
+.buttonn{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.47);
+    cursor: pointer;
+    font-size: 1.3vmax;
+    padding-top: 0.17vmax;
+    padding-right: 0.6vmax;
+    padding-left: 0.65vmax;
+    color: rgb(0, 0, 0);
+    transition: all 0.5s;
+    border-radius: 40%;
+}
+.cartInput > input{
+    border: none;
+    padding: 0.5vmax;
+    width: 1vmax;
+    text-align:center;
+    outline: none;
+    font: 400 0.8vmax 'Roboto';
+    color: rgba(0,0,0,0.74);
+}
+
+.cartSubtotal{
+    display: flex;
+    padding: 1vmax;
+    padding-right: 0.2vmax;
+    height: 6vmax;
+    align-items: center;
+    box-sizing: border-box;
+    font: 500 1vmax 'Roboto';
+    justify-content: flex-end;
+    color: rgba(0,0,0,0.753);
+}
+
+.cartGrossProfit{
+    display: grid;
+    grid-template-columns: 4fr 1,2fr;
+
+}
+.cartGrossProfitBox{
+    font: 400 1vmax 'Roboto';
+    border-top: 3px solid aqua;   
+    margin: 1vmax 4.5vmax;
+    margin-left: 57.7vmax;
+    padding: 2vmax 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.checkOutBtn{
+    display: flex;
+    justify-content: flex-end;
+}
+.checkOutBtn > button{
+    background-color: black;
+    color: aqua;
+    border: none;
+    padding: 0.6vmax 6vmax;
+    font: 300 0.8vmax 'Roboto';
+    margin: 1vmax 4vmax;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+.checkOutBtn > button:hover{
+    background-color: aqua;
+    color: black;
+}
+
+
+@media screen and (max-width:600px){
+    .cartPage{
+        padding: 1vmax;
+        padding-top: 12vmax;
+        padding-bottom: 17.5vmax;
+    }
+    .cartHeader{
+        width: 100%;
+        font: 300 1.7vmax 'Roboto';
+        grid-template-columns: 3fr 1fr 1fr;
+    }
+    .cartContainer{
+        width: 100%;
+        grid-template-columns: 3fr 1fr 1fr;
+    }
+    .cartSubtotal{
+        font: 300 1.7vmax 'Roboto';
+        margin: 7vmax 0;
+        margin-right: 0.4vmax;
+    }
+    .cartInput{
+        height: 20vmax;
+        margin-left: 0.8vmax;
+    }
+    .cartInput > input{
+        font: 400 1.4vmax 'Roboto';
+    }
+    .buttonn{
+        font-size: 2vmax;
+        padding-left: 1vmax;
+        padding-right: 1vmax;
+    }
+    .buttonp{
+        font-size: 2vmax;
+        padding-right: 0.8vmax;
+        padding-left: 0.8vmax;
+    }
+    .cartGrossProfit{
+        margin-right: 0.8vmax;
+        margin-left: 0.8vmax;
+    }
+    .cartGrossProfitBox{
+        margin-left: 0;
+        margin-right: 0;
+        font: 400 1.8vmax 'Roboto';
+    }
+    .checkOutBtn > button{
+        margin-top: -0.9vmax;
+        width: 100%;
+        padding: 0.8vmax 2.7vmax;
+        font-size: 1.8vmax;
+    }
+
+}

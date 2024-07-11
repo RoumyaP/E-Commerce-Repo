@@ -1,0 +1,136 @@
+.productListContainer{
+    background-color: white;
+}
+
+#productListHeading{
+    text-align: center;
+    margin: 0 28vmax;
+    margin-top: 6vmax;
+    font: 500 3vmax 'Roboto';
+    border-radius: 45px;
+    color: black;
+    background-color: aqua;
+}
+
+.productHeader{
+    color: black;
+    background-color: aqua;
+    font: 300 1.8vmax 'Roboto';
+}
+
+.productHeader > tr > th:first-child{
+    border-top-left-radius: 25px;
+}
+.productHeader > tr > th:last-child{
+    border-top-right-radius: 25px;
+}
+
+.productBody{
+    font: 300 1vmax 'Roboto';
+    color: black;
+    box-shadow: 0 0 8px rgba(128, 128, 128, 0.388);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.productBody > tr{
+    transition: all 0.2s;
+}
+.productBody > tr:hover{
+    background-color: rgba(143, 143, 143, 0.466);
+}
+
+
+.productBody > tr > td{
+    text-align: center;
+}
+
+.productTable{
+    margin: 0 auto;
+    margin-top: 4vmax;
+    width: 80%;
+}
+
+.btnDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 1vmax;
+}
+
+.prevBtn{
+    background-color: aqua;
+    border: none;
+    border-radius: 25px;
+    margin: 0 1vmax;
+    cursor:pointer;
+    width: 4vmax;
+    height: 2vmax;
+    font: 500 1vmax 'Roboto';
+    transition: all 0.3s;
+}
+
+.pageBtn{
+    font: 500 1.2vmax 'Roboto';
+    border: none;
+    background-color: white;
+}
+
+.nextBtn{
+    background-color: aqua;
+    border: none;
+    border-radius: 25px;
+    margin: 0 1vmax;
+    cursor:pointer;
+    width: 4vmax;
+    height: 2vmax;
+    font: 500 1vmax 'Roboto';
+    transition: all 0.3s;
+}
+
+.pageInput{
+    border: 2px solid aqua;
+    font: 300 0.8vmax 'Roboto';
+    width: 5vmax;
+}
+
+.prevBtn:hover,.nextBtn:hover{
+    background-color: rgb(17, 215, 215);
+}
+
+
+@media screen and (max-width: 600px) {
+    #productListHeading{
+        margin: 0 15vmax;
+        padding: 1vmax 3vmax;
+        margin-top: 6vmax;
+        font: 500 2vmax 'Roboto';
+    }
+
+    .productHeader{
+        font: 300 1.7vmax 'Roboto';
+    }
+
+    .productHeader > tr > th{
+        padding: 1vmax 2vmax;
+    }
+
+    .productBody > tr > td{
+        font-size: 1.5vmax;
+    }
+
+    .btnDiv{
+        margin-bottom: 2vmax;
+    }
+
+    .prevBtn{
+        width: 6vmax;
+        height: 4vmax;
+        font: 500 1.6vmax 'Roboto';
+    }
+    
+    .nextBtn{
+        width: 6vmax;
+        height: 4vmax;
+        font: 500 1.6vmax 'Roboto';
+    }
+}

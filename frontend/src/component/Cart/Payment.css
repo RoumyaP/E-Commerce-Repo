@@ -1,0 +1,107 @@
+.page{
+  height: 120%;
+  width: 100%;
+  background-image: linear-gradient(to right, #ffffff, #3cffff);
+  margin-bottom: -13vmax;
+  padding-bottom: 6vmax;
+}
+.step{
+  padding-top: 2vmax;
+  background-image: linear-gradient(to right, #ffffff, #3cffff);
+}
+.paymentContainer {
+  display: grid;
+  place-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  height: 65vh;
+  margin: 2vmax;
+  padding-top: 6vmax;
+  }
+  
+  .paymentForm {
+    width: 22%;
+    height: 100%;
+  }
+  
+  .paymentForm > p {
+    font: 400 1.3vmax "Roboto";
+    color: black;
+    border-bottom: 1px solid black;
+    padding: 0.5vmax 0;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .paymentForm > div {
+    display: flex;
+    align-items: center;
+    margin: 2vmax 0;
+  }
+  
+  .paymentInput {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+    font: 300 0.9vmax 'Roboto';
+    background-color: white;
+  }
+  
+  .paymentForm > div > svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: aqua;
+  }
+  
+  .paymentFormBtn {
+    border: none;
+    background-color: black;
+    color: aqua;
+    font: 300 0.9vmax "Roboto";
+    width: 100%;
+    padding: 1vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+  }
+  
+  .paymentFormBtn:hover {
+    background-color: aqua;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0 0 3px black;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .paymentForm {
+      width: 90%;
+    }
+  
+    .paymentForm > p {
+      font: 400 8vw "Roboto";
+      padding: 4vw 0;
+      width: 60%;
+    }
+  
+    .paymentForm > div {
+      margin: 10vw 0;
+    }
+  
+    .paymentInput {
+      padding: 4vw 10vw;
+    }
+  
+    .paymentForm > div > svg {
+      font-size: 6vw;
+    }
+  
+    .paymentFormBtn {
+      font: 300 4vw "Roboto";
+      padding: 4vw;
+    }
+  }
