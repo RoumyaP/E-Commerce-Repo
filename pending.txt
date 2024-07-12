@@ -6,8 +6,7 @@ Pending:
 
 6. Not logging out on certain pages, says 404 not found.
 
-7. Out of Stock not working for out of stock items hence getting fucked 
-   fucked in Dashboard.
+7. Normal ID login is causing infinite loop at /account.
 
 
 
